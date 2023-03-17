@@ -1,0 +1,19 @@
+﻿1. mkdir "Игрушки для школьников" && mkdir "Игрушки для дошколят"
+2. cd "Игрушки для школьников"
+touch Работы.txt && touch Конструктор.txt && touch "Настольные игры".txt
+cd ..
+3. cd "Игрушки для дошколят"
+touch "Мягкие игрушки".txt Куклы.txt "Настольные игры".txt
+cd ..
+4. mkdir "Имя Игрушки"
+mv Игрушки\ для\ школьников/* Имя\ Игрушки
+mv Игрушки\ для\ дошколят/* Имя\ Игрушки
+rm -r Игрушки\ для\ школьников
+rm -r Игрушки\ для\ дошколят
+5. mv "Имя Игрушки" Игрушки
+6. ls -l Игрушки
+7. snap install telegram-desktop
+snap list
+snap remove telegram-desktop
+8. sudo nano /etc/crontab
+3   *    * * *   usr/bin/date » /home/rustam/data.log
